@@ -121,8 +121,7 @@ return [
     "twitter"       =>  "@yourtwitterusername",
     "instagram"     =>  "@yourinstagramusername",
     "facebook"      =>  "@yourfacebookusername",
-    "fb_app_id"     =>  "240303513565646",  # Get yours at https://developers.facebook.com/apps
-//  "fb_app_id"     =>  "123456789012345",  # Get yours at https://developers.facebook.com/apps
+    "fb_app_id"     =>  "123456789012345",  # Get yours at https://developers.facebook.com/apps
     "geo"           =>  [
            "region" =>  "xx",         # Georegion http://geo-tag.de/generator
          "latitude" =>  "00.000000",  # Geoposition (latitude) http://geo-tag.de/generator
