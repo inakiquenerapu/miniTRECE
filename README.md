@@ -2,7 +2,7 @@
 
 A very simple, lightweight, minimalist, free (GNU GPLv3) CMS or Website builder tool based on documents on the server (no database) and (this is important) multilingual-ready and multilingual-friendly from the very first moment (no plugins needed). Contents can be written with markdown or hmtl syntax.
 
-Files `.htaccess`, `index.php` and `core/conf.php` are the important ones. All the other files are just for content or customization. Let me suggest you to start a fresh install of miniTRECE using only these three files and then begin building, adding the other files from the .zip, one by one.
+Files `.htaccess`, `index.php` and `core/conf.php` are the important ones. The remaining files are just for content or customization. Let me suggest you to start a fresh install of miniTRECE using only these three files and then begin building, adding the other files from the .zip, one by one.
 
 Folder `inc` is where all the content is stored. For instance: place at `inc/` a file named `test.php` with a simple «Hello» as content and then add test to the url at your browser (something like `yourdomain.com/en/test` if your site is multilingual or `yourdomain.com/test` if your site is monolingual). You're done! (Demo here: https://mini.trece.io/en/test).
 
