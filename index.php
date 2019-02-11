@@ -245,7 +245,7 @@
       header("location:".
         REALPATH.
         $conf["site"]["main_lang"].
-        ($conf["site"]["homepage_redirect"]!="" ? "/".$conf["site"]["homepage_redirect"]:"").
+        ($conf["file"]["homepage_redirect"]!="" ? "/".$conf["file"]["homepage_redirect"]:"").
         "/".
         QUERYQ
         );
@@ -254,14 +254,14 @@
   endif;
 
   if (
-      $conf["site"]["homepage_redirect"] != ""
+      $conf["file"]["homepage_redirect"] != ""
       && (!isset($conf["site"]["virtualpathArray"][0]))
-     ) : # Stop the presses! $conf["site"]["homepage_redirect"] is set, but naked address found @ the URL. Redirecting to $conf["site"]["homepage_redirect"]
+     ) : # Stop the presses! $conf["file"]["homepage_redirect"] is set, but naked address found @ the URL. Redirecting to $conf["file"]["homepage_redirect"]
 
       header("location:".
         $conf["site"]["realpath"].
         (defined("MULTILANG")?LANG:"").
-        $conf["site"]["homepage_redirect"].
+        $conf["file"]["homepage_redirect"].
         "/".
         QUERYQ
         );
