@@ -19,7 +19,7 @@
 </div>
 
 <h4><strong>Ok, some light:</strong></h4>
-<p>Files <code>.htaccess</code>, <code>index.php</code> and <code>core/conf.php</code> (<code>conf.php</code> inside a folder named <code>core</code>) are the important ones. All the other files are just content or for customization. Let me suggest you to start a fresh installation of miniTRECE using only these three files and start building adding the other files from the .zip, one by one.</p>
+<p>Files <code>.htaccess</code>, <code>index.php</code> and <code>core/conf.php</code> (<code>conf.php</code> inside a folder named <code>core</code>) are the important ones. All the other files are just content or for customization. Let me suggest you to start a fresh installation of miniTRECE using only these three files and then begin building, adding the other files from the .zip, one by one.</p>
 
 <p>Folder <code>inc</code> is where all the content is stored. For instance: place at <code>inc/</code> a file named <code>test.php</code> with a simple «Hello» as content and then add <code>test</code> to the url at your browser (something like <code>yourdomain.com/en/test</code> if your site is multilingual or <code>yourdomain.com/test</code> if your site is monolingual). You're done! (Demo here: <a href="https://mini.trece.io/en/test">https://mini.trece.io/en/test</a>.</p>
 
