@@ -96,7 +96,7 @@ return [
                             ],
     "keywords"          =>  "word, another word, three more words, etc",
     "image"             =>  [
-                 "file" =>  "",
+                 "file" =>  "https://mini.trece.io/img/trece.jpg",
           "description" =>  [
                    "en" =>  "Image description",
                    "es" =>  "Descripción de la imagen",
