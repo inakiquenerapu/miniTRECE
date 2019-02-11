@@ -96,7 +96,7 @@ return [
                             ],
     "keywords"          =>  "word, another word, three more words, etc",
     "image"             =>  [
-                 "file" =>  "https://ep01.epimg.net/elpais/imagenes/2019/02/10/portada/1549801004_128473_1549814932_portada_normal.jpg",
+                 "file" =>  "",
           "description" =>  [
                    "en" =>  "Image description",
                    "es" =>  "Descripción de la imagen",
