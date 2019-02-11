@@ -60,7 +60,7 @@ return [
     "sections"          =>  [
                "github" =>  [
                  "link" =>  "https://github.com/quenerapu/miniTRECE",
-                   "en" =>  "miniTRECE en GitHub",
+                   "en" =>  "miniTRECE on GitHub",
                    "es" =>  "miniTRECE en GitHub",
                   "gal" =>  "miniTRECE en GitHub",
                             ],
