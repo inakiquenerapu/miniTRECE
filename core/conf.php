@@ -115,7 +115,7 @@ return [
               "gal" => "Rexión (País)",
                         ],
     "phone_no"      =>  "+xx xxxxxxxxx",
-    "email"         =>  "info@yoursite.com",
+    "email"         =>  "email@domain.com",
     "twitter"       =>  "@yourtwitterusername",
     "instagram"     =>  "@yourinstagramusername",
     "facebook"      =>  "@yourfacebookusername",
