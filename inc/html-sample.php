@@ -3,7 +3,7 @@
 [datetime]:           # "2018-02-10 20:47:00"
 [description]:        # "[en]Description in English|[es]Descripción en español|[gal]Descripción en galego"
 [keywords]:           # "words, palabras e máis palabras"
-[image_file]:         # "https://mini.trece.io/img/trece.jpg"
+[image_file]:         # "https://mini.trece.io/img/og/trece.jpg"
 [image_description]:  # "[en]Image description|[es]Descripción de la imagen|[gal]Descripción da imaxe"
 
 */ ?>
