@@ -57,8 +57,6 @@ return [
     "robots"            =>  "index, follow", # Ref: https://www.searchenginejournal.com/best-practices-setting-meta-robots-tags-robots-txt/
     "langs"             =>  "en en-US|es es-ES|gal gl-ES",  # Order matters. First language is the main language
                                                             # Examples: en en-US|es es-ES|gal gl-ES|ar ar-MA rtl|zh zh-CN ttb
-//  "langs"             =>  "en en-US",                     # Order matters. First language is the main language
-                                                            # Examples: en en-US|es es-ES|gal gl-ES|ar ar-MA rtl|zh zh-CN ttb
     "sections"          =>  [
                "github" =>  [
                  "link" =>  "https://github.com/quenerapu/miniTRECE",
