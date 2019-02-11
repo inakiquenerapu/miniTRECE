@@ -4,10 +4,10 @@
 
 
 
-  define("TRECE"                                , true);              # Aaaaaaamen brothers and sisters!
-  define("MARKDOWN"                             , true);              # Use or not of the Markdown syntax
-  define("THE_NAME_OF_THE_CORE_DIR"             , "core");            # CHANGE THIS and name the real folder accordingly
-  define("THE_NAME_OF_THE_CONFIGURATION_FILE"   , "conf");            # CHANGE THIS and name the real file accordingly
+  define("TRECE"                                , true);    # Aaaaaaamen brothers and sisters!
+  define("MARKDOWN"                             , true);    # Use the Markdown syntax or not
+  define("THE_NAME_OF_THE_CORE_DIR"             , "core");  # CHANGE THIS and name the real folder accordingly
+  define("THE_NAME_OF_THE_CONFIGURATION_FILE"   , "conf");  # CHANGE THIS and name the real file accordingly
 
 
 
@@ -75,9 +75,9 @@
 
 # TRECE: A multilingual boilerplate framework for the brave.
 # BECAUSE WHAT COULD GO WRONG?
-# Version ".$conf["trece"]["version"]." '".$conf["trece"]["motto"]."'
+# Version mini_".$conf["trece"]["version"]." '".$conf["trece"]["motto"]."'
 # Created by Iñaki Quenerapú (@quenerapu)
-# GPL-3.0 3.0 https://choosealicense.com/licenses/gpl-3.0/
+# GPL-3.0 https://choosealicense.com/licenses/gpl-3.0/
 
 
   BE GRATEFUL. Make someone happy by tweeting at least one of these lines
@@ -297,19 +297,19 @@
 
   if($conf["site"]["action"]) :
 
-    if(!$page && file_exists($conf["dir"]["includes"].implode("/",$conf["site"]["virtualpathArray"]).".php")) : # Caso 1: existe /cosa.php
+    if(!$page && file_exists($conf["dir"]["includes"].implode("/",$conf["site"]["virtualpathArray"]).".php")) :
 
       $page = $conf["dir"]["includes"].implode("/",$conf["site"]["virtualpathArray"]).".php";
 
     endif;
 
-    if(!$page && file_exists($conf["dir"]["includes"].implode("-",$conf["site"]["virtualpathArray"]).".php")) : # Caso 3: existe /cosa-bonita.php (URL: /cosa/bonita)
+    if(!$page && file_exists($conf["dir"]["includes"].implode("-",$conf["site"]["virtualpathArray"]).".php")) :
 
       $page = $conf["dir"]["includes"].implode("-",$conf["site"]["virtualpathArray"]).".php";
 
     endif;
 
-    if(!$page && file_exists($conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php")) : # Caso 2: existe /cosa/index.php
+    if(!$page && file_exists($conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php")) :
 
       $page = $conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php";
 
