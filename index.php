@@ -246,7 +246,7 @@
         REALPATH.
         $conf["site"]["main_lang"].
         ($conf["file"]["homepage_redirect"]!="" ? "/".$conf["file"]["homepage_redirect"]:"").
-        "/".
+//      "/".
         QUERYQ
         );
       die();
@@ -262,7 +262,7 @@
         $conf["site"]["realpath"].
         (defined("MULTILANG")?LANG:"").
         $conf["file"]["homepage_redirect"].
-        "/".
+//      "/".
         QUERYQ
         );
       die();
