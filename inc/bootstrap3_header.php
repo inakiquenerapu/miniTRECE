@@ -14,6 +14,7 @@
   <meta name="lang" content="<?=$conf["site"]["langs"][LANG]["culture-name1"];?>" />
   <meta name="generator" content="<?=$conf["site"]["generator"];?>" />
   <meta name="robots" content="<?=$conf["site"]["robots"];?>" />
+  <meta name="description" content="<?=$conf["meta"]["description"][LANG];?>" />
 
 <!-- OG -->
   <meta property="fb:app_id" content="<?=$conf["contact"]["fb_app_id"];?>" />
@@ -21,8 +22,6 @@
   <meta property="og:url" content="<?=$conf["site"]["fullpath"];?>" />
   <meta property="og:title" content="<?=$conf["meta"]["title"][LANG];?>" />
   <meta property="og:image" content="<?=$conf["meta"]["image"]["file"];?>" /><!-- 1200x630 px -->
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:description" content="<?=$conf["meta"]["description"][LANG];?>" />
   <meta property="og:image:alt" content="<?=$conf["meta"]["image"]["description"][LANG];?>" />
   <meta property="og:site_name" content="<?=$conf["meta"]["name"][LANG];?>" />
@@ -42,8 +41,6 @@
 
 <!-- Bootstrap & jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/<?=$conf["version"]["jquery"];?>/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/<?=$conf["version"]["jqueryui"];?>/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/<?=$conf["version"]["moment"];?>/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/<?=$conf["version"]["bootstrap"];?>/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/<?=$conf["version"]["bootstrap"];?>/css/bootstrap.min.css">
 
