@@ -1,4 +1,4 @@
-<!DOCTYPE html><?=BEGRATEFUL;?>
+<!DOCTYPE html>
 <head>
   <title><?=$conf["meta"]["title"][LANG];?></title>
   <link rel="canonical" href="<?=$conf["site"]["fullpath"];?>" />
