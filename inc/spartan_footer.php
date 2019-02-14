@@ -10,5 +10,6 @@
 
   </footer>
 
+<?=BEGRATEFUL;?>
 </body>
 </html>
