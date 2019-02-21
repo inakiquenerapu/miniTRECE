@@ -1,6 +1,6 @@
 # miniTRECE
 
-A very simple, lightweight, minimalist, free (GNU GPLv3) CMS or Website builder tool based on documents on the server (no database) and (this is important) multilingual-ready and multilingual-friendly from the very first moment (no plugins needed). Contents can be written with markdown or hmtl syntax.
+A very simple, lightweight, minimalist, free (MIT License) CMS or Website builder tool based on documents on the server (no database) and (this is important) multilingual-ready and multilingual-friendly from the very first moment (no plugins needed). Contents can be written with markdown or hmtl syntax.
 
 Files `.htaccess`, `index.php` and `core/conf.php` are the important ones. The remaining files are just for content or customization. Let me suggest you to start a fresh install of miniTRECE using only these three files and then begin building, adding the other files from the .zip, one by one.
 
