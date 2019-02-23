@@ -91,6 +91,7 @@
   Thank you Brian Reavis (@brianreavis) for inventing Selectize http://selectize.github.io/selectize.js/
   Thank you Boniface Pereira (@craftpip) for inventing jQuery Confirm. https://craftpip.github.io/jquery-confirm/
   Thank you Daniel Eden (@_dte) for inventing Animate.css. https://daneden.github.io/animate.css/
+  Thank you Daniel Ha (@danielha) and Jason Yan (@jasonyan) for inventing Disqus. https://disqus.com/
   Thank you Dave Gandy (@davegandy) for inventing FontAwesome. https://fontawesome.com/
   Thank you Douglas Crockford for inventing JSON. https://www.json.org/
   Thank you Dries Buytaert (@Dries) for inventing Drupal. https://www.drupal.org/
@@ -285,6 +286,7 @@
 
 
   $page = false;
+  $noComments = false;
 
   if(!isset($conf["site"]["action"])) :
 
@@ -319,12 +321,14 @@
 
       define("ISHOMEPAGE", true);
       $page = $conf["dir"]["includes"].$conf["file"]["homepage"].".php";
+      $noComments = true;
 
     endif;
 
     if(!$page && file_exists($conf["dir"]["includes"].$conf["file"]["the404"].".php")) :
 
       $page = $conf["dir"]["includes"].$conf["file"]["the404"].".php";
+      $noComments = true;
 
     endif;
 
@@ -373,7 +377,11 @@
 
       endforeach;
 
-      if(isset($conf["meta"]["temp"]["image_file"])) : $conf["meta"]["image"]["file"] = $conf["meta"]["temp"]["image_file"]; unset($conf["meta"]["image_file"]); endif;
+      if(isset($conf["meta"]["temp"]["image_file"]))  : $conf["meta"]["image"]["file"]  = $conf["meta"]["temp"]["image_file"];  unset($conf["meta"]["image_file"]); endif;
+      if(isset($conf["meta"]["temp"]["datetime"]))    :
+                                                        $conf["meta"]["datetime"] = $conf["meta"]["temp"]["datetime"];
+                                                        define("DATE",date('Y-m-d', strtotime(str_replace('-', '/', $conf["meta"]["datetime"]))));
+      endif;
 
       unset($conf["meta"]["temp"]);
 
@@ -394,11 +402,21 @@
       $page = file($page,FILE_IGNORE_NEW_LINES);
       array_shift($page);
       $page = implode("\n",$page);
-      $page = strstr($page,"[--".LANG."--]");
-      $page = strstr($page,"[--/".LANG."--]",true);
-      $page = str_replace_plus($fo,"[--".LANG."--]","",$page);
 
-      $Parsedown = new ParsedownExtraPlugin(); $Parsedown->table_class = "table table-bordered table-condensed short";
+      if(defined("MULTILANG")) :
+
+        $page = strstr($page,"[--".LANG."--]");
+        $page = strstr($page,"[--/".LANG."--]",true);
+        $page = str_replace_plus($fo,"[--".LANG."--]","",$page);
+
+      endif;
+
+      $page = str_replace("[[DATE]]",DATE,$page);
+
+      $Parsedown = new ParsedownExtraPlugin();
+      $Parsedown->code_block_attr_on_parent = true;
+      $Parsedown->code_text = '<span class="my-code">%s</span>';
+      $Parsedown->table_class = "table table-bordered table-condensed short";
       echo $Parsedown->text($page);
 
     else :
