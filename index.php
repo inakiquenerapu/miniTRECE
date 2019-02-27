@@ -97,6 +97,7 @@
   Thank you Dries Buytaert (@Dries) for inventing Drupal. https://www.drupal.org/
   Thank you Eduardo D. (@eduardo_dx) for creating the Sermepa\Tpv class. https://github.com/ssheduardo/sermepa/
   Thank you Emanuil Rusev (@erusev) for inventing Parsedown. http://parsedown.org/
+  Thank you Eric Meyer (@meyerweb) for inventing Eric Meyer’s CSS Reset https://meyerweb.com/eric/tools/css/reset/
   Thank you Fabien Potencier (@fabpot) for inventing Symfony. https://www.symfony.com/
   Thank you Håkon Wium Lie (@wiumlie) for inventing CSS. https://www.w3.org/Style/CSS/
   Thank you Jakub Vrána (@jakubvrana) for inventing Adminer. https://www.adminer.org/
@@ -299,6 +300,12 @@
 
   if($conf["site"]["action"]) :
 
+    if(!$page && file_exists($conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php")) :
+
+      $page = $conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php";
+
+    endif;
+
     if(!$page && file_exists($conf["dir"]["includes"].implode("/",$conf["site"]["virtualpathArray"]).".php")) :
 
       $page = $conf["dir"]["includes"].implode("/",$conf["site"]["virtualpathArray"]).".php";
@@ -311,13 +318,7 @@
 
     endif;
 
-    if(!$page && file_exists($conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php")) :
-
-      $page = $conf["dir"]["includes"].$conf["site"]["action"]."/".$conf["file"]["index"].".php";
-
-    endif;
-
-    if(!$page && $conf["site"]["virtualpathArray"][0] == "" && file_exists($conf["dir"]["includes"].$conf["file"]["homepage"].".php")) :
+    if(!$page && (!isset($conf["site"]["virtualpathArray"][0]) || $conf["site"]["virtualpathArray"][0] == "") && file_exists($conf["dir"]["includes"].$conf["file"]["homepage"].".php")) :
 
       define("ISHOMEPAGE", true);
       $page = $conf["dir"]["includes"].$conf["file"]["homepage"].".php";
@@ -338,86 +339,97 @@
 
   if(file_exists($page)):
 
-    $lines = array_slice(file($page,FILE_IGNORE_NEW_LINES),1,6);
-    foreach($lines as $line) :
-      $line = explode(":",$line,2);
-      $line[0] = trim($line[0]," [] ");
-      $line[1] = trim($line[1]); $line[1] = trim($line[1],"()"); $line[1] = ltrim($line[1],"# "); $line[1] = trim($line[1],'"');
-      if(in_array($line[0],["title","datetime","description","keywords","image_file","image_description"])) :
-        $conf["meta"]["temp"][$line[0]] = $line[1];
-      endif;
-    endforeach;
-
-    if($conf["meta"]["temp"]) :
-
-      $langs = explode("|",$conf["site"]["all_langs"]);
-
-      $titles = explode("|",$conf["meta"]["temp"]["title"]);
-      $descriptions = explode("|",$conf["meta"]["temp"]["description"]);
-      $image_descriptions = explode("|",$conf["meta"]["temp"]["image_description"]);
-
-      foreach ($titles as $title) :
-
-        $lang = preg_match('#\[(.*?)\]#',$title,$lang) ? $lang[1] : LANG;
-        $conf["meta"]["title"][$lang] = str_replace_plus($fo,"[".$lang."]","",$title);
-
-      endforeach;
-
-      foreach ($descriptions as $description) :
-
-        $lang = preg_match('#\[(.*?)\]#',$description,$lang) ? $lang[1] : LANG;
-        $conf["meta"]["description"][$lang] = str_replace_plus($fo,"[".$lang."]","",$description);
-
-      endforeach;
-
-      foreach ($image_descriptions as $image_description) :
-
-        $lang = preg_match('#\[(.*?)\]#',$image_description,$lang) ? $lang[1] : LANG;
-        $conf["meta"]["image"]["description"][$lang] = str_replace_plus($fo,"[".$lang."]","",$image_description);
-
-      endforeach;
-
-      if(isset($conf["meta"]["temp"]["image_file"]))  : $conf["meta"]["image"]["file"]  = $conf["meta"]["temp"]["image_file"];  unset($conf["meta"]["image_file"]); endif;
-      if(isset($conf["meta"]["temp"]["datetime"]))    :
-                                                        $conf["meta"]["datetime"] = $conf["meta"]["temp"]["datetime"];
-                                                        define("DATE",date('Y-m-d', strtotime(str_replace('-', '/', $conf["meta"]["datetime"]))));
-      endif;
-
-      unset($conf["meta"]["temp"]);
-
-    endif;
-
-  endif;
-
-  if(file_exists($conf["dir"]["includes"].$conf["file"]["header"].".php")): require_once($conf["dir"]["includes"].$conf["file"]["header"].".php"); else : echo "<!DOCTYPE html>".BEGRATEFUL."<pre>header\n----</pre>\n"; endif;
-
-  if(file_exists($page)):
-
     $syntax = array_slice(file($page),0,1);
     $syntax = explode("<?php /* ",$syntax[0]);
-    $syntax = trim($syntax[1]);
+    $syntax = isset($syntax[1])?trim($syntax[1]):"php";
 
-    if($syntax == "md") :
+    if(in_array($syntax,array("html","md"))) :
 
-      $page = file($page,FILE_IGNORE_NEW_LINES);
-      array_shift($page);
-      $page = implode("\n",$page);
+      $lines = array_slice(file($page,FILE_IGNORE_NEW_LINES),1,6);
 
-      if(defined("MULTILANG")) :
+      foreach($lines as $line) :
+        $line = explode(":",$line,2);
+        $line[0] = trim($line[0]," [] ");
+        $line[1] = trim($line[1]); $line[1] = trim($line[1],"()"); $line[1] = ltrim($line[1],"# "); $line[1] = trim($line[1],'"');
+        if(in_array($line[0],["title","datetime","description","keywords","image_file","image_description"])) :
+          $conf["meta"]["temp"][$line[0]] = $line[1];
+        endif;
+      endforeach;
 
-        $page = strstr($page,"[--".LANG."--]");
-        $page = strstr($page,"[--/".LANG."--]",true);
-        $page = str_replace_plus($fo,"[--".LANG."--]","",$page);
+      if($conf["meta"]["temp"]) :
+
+        $langs = explode("|",$conf["site"]["all_langs"]);
+
+        $titles = explode("|",$conf["meta"]["temp"]["title"]);
+        $descriptions = explode("|",$conf["meta"]["temp"]["description"]);
+        $image_descriptions = explode("|",$conf["meta"]["temp"]["image_description"]);
+
+        foreach ($titles as $title) :
+
+          $lang = preg_match('#\[(.*?)\]#',$title,$lang) ? $lang[1] : LANG;
+          $conf["meta"]["title"][$lang] = str_replace_plus("fo","[".$lang."]","",$title);
+
+        endforeach;
+
+        foreach ($descriptions as $description) :
+
+          $lang = preg_match('#\[(.*?)\]#',$description,$lang) ? $lang[1] : LANG;
+          $conf["meta"]["description"][$lang] = str_replace_plus("fo","[".$lang."]","",$description);
+
+        endforeach;
+
+        foreach ($image_descriptions as $image_description) :
+
+          $lang = preg_match('#\[(.*?)\]#',$image_description,$lang) ? $lang[1] : LANG;
+          $conf["meta"]["image"]["description"][$lang] = str_replace_plus("fo","[".$lang."]","",$image_description);
+
+        endforeach;
+
+        if(isset($conf["meta"]["temp"]["image_file"])) : $conf["meta"]["image"]["file"]  = $conf["meta"]["temp"]["image_file"];  unset($conf["meta"]["image_file"]); endif;
+        if(isset($conf["meta"]["temp"]["datetime"]))   :
+                                                         $conf["meta"]["datetime"] = $conf["meta"]["temp"]["datetime"];
+                                                         define("DATE",date('Y-m-d', strtotime(str_replace('-', '/', $conf["meta"]["datetime"]))));
+        endif;
+
+        unset($conf["meta"]["temp"]);
 
       endif;
 
-      $page = str_replace("[[DATE]]",DATE,$page);
+      if(file_exists($conf["dir"]["includes"].$conf["file"]["header"].".php")): require_once($conf["dir"]["includes"].$conf["file"]["header"].".php"); else : echo "<!DOCTYPE html>\n<body>\n<pre>\nheader\n----\n</pre>\n"; endif;
 
-      $Parsedown = new ParsedownExtraPlugin();
-      $Parsedown->code_block_attr_on_parent = true;
-      $Parsedown->code_text = '<span class="my-code">%s</span>';
-      $Parsedown->table_class = "table table-bordered table-condensed short";
-      echo $Parsedown->text($page);
+      if($syntax == "md") :
+
+        $page = file($page,FILE_IGNORE_NEW_LINES);
+        array_shift($page);
+        $page = implode("\n",$page);
+
+        if(defined("MULTILANG")) :
+
+          if(strpos($page,"[--".LANG."--]")) :
+
+            $page = strstr($page,"[--".LANG."--]");
+            $page = strstr($page,"[--/".LANG."--]",true);
+            $page = str_replace_plus("fo","[--".LANG."--]","",$page);
+
+          endif;
+
+        endif;
+
+        $page = str_replace("[[DATE]]",DATE,$page);
+
+        $Parsedown = new ParsedownExtraPlugin();
+        $Parsedown->code_block_attr_on_parent = true;
+        $Parsedown->code_text = '<span class="my-code">%s</span>';
+        $Parsedown->table_class = "table table-bordered table-condensed short";
+        echo $Parsedown->text($page);
+
+      else :
+
+        require_once($page);
+
+      endif;
+
+      if(file_exists($conf["dir"]["includes"].$conf["file"]["footer"].".php")): require_once($conf["dir"]["includes"].$conf["file"]["footer"].".php"); else : echo "\n<pre>\n----\nfooter\n</pre>".BEGRATEFUL."\n</body>\n</html>"; endif;
 
     else :
 
@@ -431,15 +443,13 @@
 
   endif;
 
-  if(file_exists($conf["dir"]["includes"].$conf["file"]["footer"].".php")): require_once($conf["dir"]["includes"].$conf["file"]["footer"].".php"); else : echo "<pre>----\nfooter</pre>"; endif;
-
 
 
 # -----------------------------------------------------------------------------------
 
 
 
-function str_replace_plus($folo,$search,$replace,$subject) { # Replaces FIRST or LAST occurence of a string in a string
+function str_replace_plus($fl,$search,$replace,$subject) { # Replaces FIRST or LAST occurence of a string in a string
   $pos=($fl=="lo"?strrpos($subject,$search):strpos($subject,$search)); # fo = strpos = first occurrence | lo = strrpos = last occurrence
   if($pos!==false) :
     $subject=substr_replace($subject,$replace,$pos,strlen($search));
