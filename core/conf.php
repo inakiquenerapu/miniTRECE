@@ -159,6 +159,7 @@ return [
     "jquery_confirm"                    =>  "3.3.4",          # jQuery Confirm http://craftpip.github.io/jquery-confirm/
     "jquery_form_validator"             =>  "2.3.79",         # jQuery Form Validator http://www.formvalidator.net/
     "jquery_iframe_transport"           =>  "1.0.1",          # jQuery Iframe Transport https://cmlenz.github.io/jquery-iframe-transport/
+    "jquery_mask"                       =>  "1.14.15",        # jQuery Mask Plugin https://igorescobar.github.io/jQuery-Mask-Plugin/
     "modernizr"                         =>  "2.8.3",          # Modernizr https://modernizr.com/
     "moment"                            =>  "2.24.0",         # Moment JS http://momentjs.com/
     "multiscroll_js"                    =>  "0.2.2",          # Multiscroll JS http://alvarotrigo.com/multiScroll/
