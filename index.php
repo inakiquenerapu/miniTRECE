@@ -86,10 +86,12 @@
   Thank you Alexandru Mărășteanu for porting sprintf to Javascript. https://github.com/alexei/sprintf.js/
   Thank you Alexis Deveria (@fyrd) for inventing Can I use. https://caniuse.com/
   Thank you Blake Ross (@blakeross) for inventing Firefox. https://www.firefox.com/
+  Thank you Boniface Pereira (@craftpip) for inventing jQuery Confirm. https://craftpip.github.io/jquery-confirm/
   Thank you Brendan Eich (@BrendanEich) for inventing JavaScript. https://www.javascript.com/
   Thank you Brent Matzelle (@bmatzelle) for inventing PHPMailer. https://github.com/PHPMailer/PHPMailer/
   Thank you Brian Reavis (@brianreavis) for inventing Selectize http://selectize.github.io/selectize.js/
-  Thank you Boniface Pereira (@craftpip) for inventing jQuery Confirm. https://craftpip.github.io/jquery-confirm/
+  Thank you Christian Robertson (@cr64) for inventing the Roboto fontface. https://fonts.google.com/specimen/Roboto/
+  Thank you CJ Patoilo (@cjpatoilo) for inventing Milligram. https://milligram.io/
   Thank you Daniel Eden (@_dte) for inventing Animate.css. https://daneden.github.io/animate.css/
   Thank you Daniel Ha (@danielha) and Jason Yan (@jasonyan) for inventing Disqus. https://disqus.com/
   Thank you Dave Gandy (@davegandy) for inventing FontAwesome. https://fontawesome.com/
@@ -100,6 +102,7 @@
   Thank you Eric Meyer (@meyerweb) for inventing Eric Meyer’s CSS Reset https://meyerweb.com/eric/tools/css/reset/
   Thank you Fabien Potencier (@fabpot) for inventing Symfony. https://www.symfony.com/
   Thank you Håkon Wium Lie (@wiumlie) for inventing CSS. https://www.w3.org/Style/CSS/
+  Thank you Igor Escobar (@igorescobar) for inventing jQuery Mask Plugin. https://igorescobar.github.io/jQuery-Mask-Plugin/
   Thank you Jakub Vrána (@jakubvrana) for inventing Adminer. https://www.adminer.org/
   Thank you Javi Aguilar (@itsjaviaguilar) for inventing Bootstrap Colorpicker. https://farbelous.io/bootstrap-colorpicker/
   Thank you Jeff Atwood (@codinghorror) and Joel Spolsky (@spolsky) for inventing Stack Overflow. https://stackoverflow.com/
@@ -107,9 +110,9 @@
   Thank you John Gruber (@gruber) for inventing Markdown. https://daringfireball.net/projects/markdown/
   Thank you John Resig (@jeresig) for inventing jQuery. https://jquery.com/
   Thank you Linus Torvalds (@Linus__Torvalds) for inventing Linux. https://github.com/torvalds/linux/
+  Thank you Maciej Gurban (@maciej_gurban) for inventing Responsive Bootstrap Toolkit. https://github.com/maciej-gurban/responsive-bootstrap-toolkit/
   Thank you Mark Otto (@mdo) and Jacob Thornton (@fat) for inventing Bootstrap. https://getbootstrap.com/
   Thank you Matt Mullenweg (@photomatt) for inventing WordPress. https://wordpress.org/
-  Thank you Maciej Gurban (@maciej_gurban) for inventing Responsive Bootstrap Toolkit. https://github.com/maciej-gurban/responsive-bootstrap-toolkit/
   Thank you Min Hur (@minhur) for inventing Bootstrap Toggle. http://bootstraptoggle.com/
   Thank you Nicolas Gallagher (@necolas) for inventing Normalize.css. https://necolas.github.io/normalize.css/
   Thank you Rasmus Lerdorf (@rasmus) for inventing PHP. http://php.net/
