@@ -6,7 +6,7 @@ return [
   "trece"             =>  [
 # --------------------------------------------------------------------
     "flavour"   =>  "mini",  # http://mini.trece.io/
-    "version"   =>  "0.13.13",  # http://mini.trece.io/changelog
+    "version"   =>  "0.14.00",  # http://mini.trece.io/changelog
     "motto"     =>  "A humble start", # In other words: "Nailing perfection" ;-)
     "theme"     =>  $theme="minimal",
   ],
@@ -94,7 +94,7 @@ return [
                             ],
     "keywords"          =>  "word, another word, three more words, etc",
     "image"             =>  [
-                 "file" =>  "https://mini.trece.io/img/trece.jpg",
+                 "file" =>  "https://mini.trece.io/img/og/trece.jpg",
           "description" =>  [
                    "en" =>  "Image description",
                    "es" =>  "Descripción de la imagen",
@@ -147,6 +147,7 @@ return [
     "bootstrap_switch"                  =>  "3.3.4",          # Bootstrap Switch http://bootstrapswitch.site/
     "bootstrap_toggle"                  =>  "2.2.2",          # Bootstrap Toggle http://bootstraptoggle.com/
     "bootswatch"                        =>  "united",         # Bootswatch theme http://bootswatch.com/
+    "clipboard_js"                      =>  "2.0.4",          # Clipboard.js https://clipboardjs.com/
     "croppie"                           =>  "2.6.3",          # Croppie http://foliotek.github.io/Croppie/
     "exif_js"                           =>  "2.3.0",          # Exif.js https://github.com/exif-js/exif-js
     "fontawesome"                       =>  "4.7.0",          # Font Awesome http://fontawesome.io/

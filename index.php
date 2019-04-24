@@ -77,7 +77,7 @@
 # BECAUSE WHAT COULD GO WRONG?
 # Version mini_".$conf["trece"]["version"]." '".$conf["trece"]["motto"]."'
 # Created by Iñaki Quenerapú (@quenerapu)
-# GPL-3.0 https://choosealicense.com/licenses/gpl-3.0/
+# MIT License https://choosealicense.com/licenses/mit/
 
 
   BE GRATEFUL. Make someone happy by tweeting at least one of these lines
@@ -85,6 +85,7 @@
   Thank you Adam Shaw for inventing FullCalendar. https://fullcalendar.io/
   Thank you Alexandru Mărășteanu for porting sprintf to Javascript. https://github.com/alexei/sprintf.js/
   Thank you Alexis Deveria (@fyrd) for inventing Can I use. https://caniuse.com/
+  Thank you André Ruffert (@andreruffert) for inventing Rangeslider. http://rangeslider.js.org/
   Thank you Blake Ross (@blakeross) for inventing Firefox. https://www.firefox.com/
   Thank you Boniface Pereira (@craftpip) for inventing jQuery Confirm. https://craftpip.github.io/jquery-confirm/
   Thank you Brendan Eich (@BrendanEich) for inventing JavaScript. https://www.javascript.com/
@@ -95,6 +96,7 @@
   Thank you Daniel Eden (@_dte) for inventing Animate.css. https://daneden.github.io/animate.css/
   Thank you Daniel Ha (@danielha) and Jason Yan (@jasonyan) for inventing Disqus. https://disqus.com/
   Thank you Dave Gandy (@davegandy) for inventing FontAwesome. https://fontawesome.com/
+  Thank you Denis Ineshin (@IonDen666) for inventing Ion RangeSlider. http://ionden.com/a/plugins/ion.rangeSlider
   Thank you Douglas Crockford for inventing JSON. https://www.json.org/
   Thank you Dries Buytaert (@Dries) for inventing Drupal. https://www.drupal.org/
   Thank you Eduardo D. (@eduardo_dx) for creating the Sermepa\Tpv class. https://github.com/ssheduardo/sermepa/
@@ -115,12 +117,15 @@
   Thank you Matt Mullenweg (@photomatt) for inventing WordPress. https://wordpress.org/
   Thank you Min Hur (@minhur) for inventing Bootstrap Toggle. http://bootstraptoggle.com/
   Thank you Nicolas Gallagher (@necolas) for inventing Normalize.css. https://necolas.github.io/normalize.css/
+  Thank you Pasquale Vitiello (@pacovitiello) for inventing Sneakpeekit. https://sneakpeekit.com/
   Thank you Rasmus Lerdorf (@rasmus) for inventing PHP. http://php.net/
   Thank you Richard Stallman for founding the Free Software Foundation. https://www.fsf.org/
   Thank you Ryan Kirkman (@ryan_kirkman) and Ajax Davis (@ajaxdavis) for inventing cdnjs. https://cdnjs.com/
   Thank you Sebastian Tschan for inventing jQuery File Upload. https://github.com/blueimp/jQuery-File-Upload/
   Thank you Silvio Moreto (@silviomoreto) for inventing Bootstrap-Select. https://silviomoreto.github.io/bootstrap-select/
+  Thank you Stefan Bohacek (@fourtonfish) for inventing Simple Sharing Buttons Generator. https://simplesharingbuttons.com/
   Thank you Stephen Cole Kleene for inventing regular expressions. https://regex101.com/
+  Thank you Silktide (@silktide) for inventing Cookie Consent by Insites https://cookieconsent.insites.com/
   Thank you Ted Nelson (@TheTedNelson) for inventing the hypertext. http://www.hyperland.com/
   Thank you Thomas Boutell (@boutell) for inventing the GD Graphics Library. https://libgd.github.io/
   Thank you Tim Berners-Lee (@timberners_lee) for inventing the Web and HTML. https://www.w3.org/html/
@@ -129,6 +134,7 @@
   Thank you Vinton Cerf (@vgcerf) for inventing the Internet. https://es.wikipedia.org/wiki/Vinton_Cerf/
   Thank you Vitaliy Potapov (@vitpotapov) for inventing X-editable. https://vitalets.github.io/x-editable/
   Thank you Ward Cunningham (@WardCunningham) for inventing the wiki. http://wiki.c2.com/
+  Thank you Zeno Rocha (@zenorocha) for inventing clipboard.js. https://clipboardjs.com/
 
 -->
 
