@@ -4,7 +4,7 @@ A very simple, lightweight, minimalist, free (MIT License) CMS or Website builde
 
 Files `.htaccess`, `index.php` and `trece/conf.php` are the important ones. The remaining files are just for content or customization. Let me suggest you to start a fresh install of miniTRECE using only these three files and then begin building, adding the other files from the .zip, one by one.
 
-Folder `trece/inc` is where all the content is stored. For instance: place at `trece/inc/` a file named `test.php` with a simple «Hello» as content and then add test to the url at your browser (something like `yourdomain.com/en/test` if your site is multilingual or `yourdomain.com/test` if your site is monolingual). You're done! (Demo here: https://mini.trece.io/en/test).
+Folder `trece/inc` is where all the content is stored. For instance: place at `trece/inc/` a file named `test.php` with a simple «Hello!» as content and then add test to the url at your browser (something like `yourdomain.com/en/test` if your site is multilingual or `yourdomain.com/test` if your site is monolingual). You're done! (Demo here: https://mini.trece.io/en/test).
 
 Files `trece/inc/html-sample.php`, `trece/inc/markdown-sample.php` and `trece/inc/demo.php` will show you how to build content in both markup languages. In these two files pay special attention to the first 7 lines. What you write there is the content for the meta fields in the header, needed to successfuly share your page in places like Facebook and Twitter. Idea: test these pages in Facebook debugger https://developers.facebook.com/tools/debug and Twitter card validator https://cards-dev.twitter.com/validator.
 
