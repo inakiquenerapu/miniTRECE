@@ -12,7 +12,7 @@
 
 # Hello world!!
 
-This page was written in English using *markdown*.
+This page was written in English using **markdown**.
 
 [--/en--]
 
@@ -22,7 +22,7 @@ This page was written in English using *markdown*.
 
 # ¡Hola mundo!
 
-Esta página está escrita en español usando *markdown*.
+Esta página está escrita en español usando **markdown**.
 
 [--/es--]
 
@@ -32,6 +32,6 @@ Esta página está escrita en español usando *markdown*.
 
 # Ola mundo!
 
-Esta páxina foi escrita en galego usando *markdown*.
+Esta páxina foi escrita en galego usando **markdown**.
 
 [--/gal--]
