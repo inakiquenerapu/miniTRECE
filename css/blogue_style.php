@@ -199,7 +199,7 @@ header{
   font-family: 'Open Sans';
   color: black;
 }
-#header div.brand img{width:35px;}
+#header div.brand img{height:35px;}
 #header div.brand a,
 #header div.languages a {
   text-decoration: none;

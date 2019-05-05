@@ -63,7 +63,8 @@
   <meta name="theme-color" content="#ffcc00">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/<?=$conf["version"]["fontawesome"];?>/css/all.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/<?=$conf["version"]["fontawesome"];?>/css/all.min.css">
 
 
   <!-- Custom Fonts -->
@@ -75,8 +76,9 @@
     href="<?=$conf["dir"]["styles"].$conf["trece"]["theme"];?>_style.php?sf=<?=$conf["css"]["stickyfooter_h"];?>">
   <?=isset($customCSS)?$customCSS:"";?>
 
-
 </head>
+
+<?php $logo = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjE5NXB0IiBoZWlnaHQ9IjE5NXB0IiB2aWV3Qm94PSIwIDAgMTk1IDE5NSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZyBpZD0iIzAwMDAwMGZmIj4KPHBhdGggZmlsbD0iIzAwMDAwMCIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gMC4wMCAwLjAwIEwgMTk1LjAwIDAuMDAgTCAxOTUuMDAgMTk1LjAwIEwgMC4wMCAxOTUuMDAgTCAwLjAwIDAuMDAgTSA1MS40NSA0Ni4zNyBDIDUxLjY4IDU2LjgyIDUxLjE0IDY3LjI5IDUxLjc1IDc3LjczIEMgNTQuNzIgNzMuMzQgNTYuMDMgNjguMDkgNTkuMDAgNjMuNzAgQyA2MS45OCA1OC43NSA2Ni4xNiA1NC4zOCA3MS41NiA1Mi4xMSBDIDc1LjUzIDUwLjI1IDc5Ljk5IDUwLjI4IDg0LjI0IDQ5LjYyIEMgODQuNjggNzYuMDkgODQuMjggMTAyLjU3IDg0LjQ1IDEyOS4wNCBDIDg0LjUzIDEzNi4xNiA4Mi40NSAxNDMuNDAgNzcuNDEgMTQ4LjYyIEMgOTAuNTkgMTQ4Ljc3IDEwMy43OCAxNDguODIgMTE2Ljk3IDE0OC42MCBDIDExMS4xMCAxNDIuNjIgMTA5LjU0IDEzNC4wNiAxMDkuNjEgMTI2LjAxIEMgMTA5Ljc1IDEwMC41NyAxMDkuNDEgNzUuMTMgMTA5Ljc4IDQ5LjcwIEMgMTE0LjExIDUwLjAyIDExOC41NiA1MC4yNiAxMjIuNjQgNTEuODYgQyAxMjcuMjkgNTMuNjUgMTMwLjgwIDU3LjM4IDEzMy45MyA2MS4xMiBDIDEzOC4wMCA2Ni4yMyAxMzkuNTkgNzIuNzQgMTQzLjIyIDc4LjExIEMgMTQzLjY4IDY3LjU1IDE0My4yMyA1Ni45OCAxNDMuNDYgNDYuNDIgQyAxMTIuNzkgNDYuMzIgODIuMTIgNDYuNDIgNTEuNDUgNDYuMzcgWiIgLz4KPC9nPgo8ZyBpZD0iI2ZmZmZmZmZmIj4KPHBhdGggZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMS4wMCIgZD0iIE0gNTEuNDUgNDYuMzcgQyA4Mi4xMiA0Ni40MiAxMTIuNzkgNDYuMzIgMTQzLjQ2IDQ2LjQyIEMgMTQzLjIzIDU2Ljk4IDE0My42OCA2Ny41NSAxNDMuMjIgNzguMTEgQyAxMzkuNTkgNzIuNzQgMTM4LjAwIDY2LjIzIDEzMy45MyA2MS4xMiBDIDEzMC44MCA1Ny4zOCAxMjcuMjkgNTMuNjUgMTIyLjY0IDUxLjg2IEMgMTE4LjU2IDUwLjI2IDExNC4xMSA1MC4wMiAxMDkuNzggNDkuNzAgQyAxMDkuNDEgNzUuMTMgMTA5Ljc1IDEwMC41NyAxMDkuNjEgMTI2LjAxIEMgMTA5LjU0IDEzNC4wNiAxMTEuMTAgMTQyLjYyIDExNi45NyAxNDguNjAgQyAxMDMuNzggMTQ4LjgyIDkwLjU5IDE0OC43NyA3Ny40MSAxNDguNjIgQyA4Mi40NSAxNDMuNDAgODQuNTMgMTM2LjE2IDg0LjQ1IDEyOS4wNCBDIDg0LjI4IDEwMi41NyA4NC42OCA3Ni4wOSA4NC4yNCA0OS42MiBDIDc5Ljk5IDUwLjI4IDc1LjUzIDUwLjI1IDcxLjU2IDUyLjExIEMgNjYuMTYgNTQuMzggNjEuOTggNTguNzUgNTkuMDAgNjMuNzAgQyA1Ni4wMyA2OC4wOSA1NC43MiA3My4zNCA1MS43NSA3Ny43MyBDIDUxLjE0IDY3LjI5IDUxLjY4IDU2LjgyIDUxLjQ1IDQ2LjM3IFoiIC8+CjwvZz4KPC9zdmc+Cg=="; ?>
 
 <body>
 
@@ -89,8 +91,8 @@
         <div class="brand">
           <a href="<?=$conf["site"]["realpathLang"];?>">
             <?php /*Blogue*/ ?>
-            <img src="<?=REALPATH.$conf["dir"]["images"];?>blogue_logo.svg"
-              alt="<?=$conf["site"]["title"][$conf["site"]["lang"]];?>" class="img-responsive">
+            <img src="data:image/svg+xml;base64,<?=$logo;?>" alt="<?=$conf["site"]["title"][$conf["site"]["lang"]];?>"
+              class="img-responsive">
           </a>
         </div>
 
@@ -106,10 +108,15 @@
 
         <aside class="social-links">
           <ul>
-            <li><a title="Comment with Disqus" href="<?=$conf["site"]["fullpath"];?>#disqus_thread"><i class="far fa-comment"></i></a></li>
-            <li><a title="Share on Twitter" href="https://twitter.com/share?url=<?=$conf["site"]["fullpath"];?>&text=<?=$conf["meta"]["title"][LANG];?>. <?=$conf["meta"]["description"][LANG];?> (<?=$conf["contact"]["twitter"];?>)" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?u=<?=$conf["site"]["fullpath"];?>" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <ul>
+            <li><a title="Comment with Disqus" href="<?=$conf["site"]["fullpath"];?>#disqus_thread"><i
+                  class="far fa-comment"></i></a></li>
+            <li><a title="Share on Twitter"
+                href="https://twitter.com/share?url=<?=$conf["site"]["fullpath"];?>&text=<?=$conf["meta"]["title"][LANG];?>. <?=$conf["meta"]["description"][LANG];?> (<?=$conf["contact"]["twitter"];?>)"
+                target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a title="Share on Facebook"
+                href="https://www.facebook.com/sharer/sharer.php?u=<?=$conf["site"]["fullpath"];?>" target="_blank"><i
+                  class="fab fa-facebook"></i></a></li>
+            <ul>
         </aside>
 
       </div>
