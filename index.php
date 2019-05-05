@@ -33,6 +33,7 @@
     ini_set("display_errors",0);
     ini_set("display_startup_errors",0);
     error_reporting(0);
+
   endif;
 
 
@@ -287,7 +288,7 @@
 
       if(!file_exists($conf["dir"]["libraries"].$conf["markdown"]["lib"]."/".$lib)) : # Markdown libraries are required
 
-        echo "<h3>MARKDOWN is set to true but Parsedown library was not found. Bye.</h3><p>Install the Parsedown library OR set markdown to <code>\"false\"</code> in <code>trece/conf.php</code>, line 59.</p>"; die();
+        echo "<h3>Markdown is set to true but Parsedown library was not found. Bye.</h3><p>Install the Parsedown library OR set markdown to <code>\"false\"</code> in <code>trece/conf.php</code>, line 59.</p>"; die();
 
       endif;
 
