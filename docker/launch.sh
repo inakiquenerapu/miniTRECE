@@ -12,6 +12,7 @@ if [ ! -d "htdocs" ]; then
     cp -r ../img htdocs
 fi
 docker run -d \
+-e SITE_SCHEME=https \
 -p 80:80 \
 -v "$(pwd)"/htdocs:/var/www/html:Z \
 --name $DOCKER_IMAGE minitrece

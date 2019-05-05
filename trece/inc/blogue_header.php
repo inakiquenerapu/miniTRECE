@@ -73,7 +73,7 @@
   <!-- Custom CSS -->
 
   <link rel="stylesheet" type="text/css" media="screen"
-    href="<?=$conf["dir"]["styles"].$conf["trece"]["theme"];?>_style.php?sf=<?=$conf["css"]["stickyfooter_h"];?>">
+    href="<?=REALPATH.$conf["dir"]["styles"].$conf["trece"]["theme"];?>_style.php">
   <?=isset($customCSS)?$customCSS:"";?>
 
 </head>
