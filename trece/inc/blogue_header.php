@@ -60,7 +60,7 @@
   <link rel="manifest" href="<?=REALPATH.$conf["dir"]["images"];?>favicon/manifest.json">
   <meta name="msapplication-TileColor" content="#ffcc00">
   <meta name="msapplication-TileImage" content="<?=REALPATH.$conf["dir"]["images"];?>favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffcc00">
+  <meta name="theme-color" content="#000">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
