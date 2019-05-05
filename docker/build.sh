@@ -1,10 +1,8 @@
 #!/bin/bash
 tar --dereference -cf minitrece.tar \
-    ../core \
+    ../trece \
     ../css \
     ../img \
-    ../inc \
-    ../lib \
     .htaccess \
     ../LICENSE \
     ../README.md \

@@ -123,6 +123,7 @@ return [
     "instagram"     =>  "@yourinstagramusername",
     "facebook"      =>  "@yourfacebookusername",
     "fb_app_id"     =>  "123456789012345",  # Get yours at https://developers.facebook.com/apps
+    "disqus"        =>  "@yourdisqususername",
     "geo"           =>  [
            "region" =>  "xx",         # Georegion http://geo-tag.de/generator
          "latitude" =>  "00.000000",  # Geoposition (latitude) http://geo-tag.de/generator
@@ -154,7 +155,7 @@ return [
     "cookieconsent2"                    =>  "3.1.0",          # Cookie Consent by Silktide Insites https://cookieconsent.insites.com/
     "croppie"                           =>  "2.6.3",          # Croppie http://foliotek.github.io/Croppie/
     "exif_js"                           =>  "2.3.0",          # Exif.js https://github.com/exif-js/exif-js/
-    "fontawesome"                       =>  "4.7.0",          # Font Awesome http://fontawesome.io/
+    "fontawesome"                       =>  "5.8.1",          # Font Awesome http://fontawesome.com/
     "fullcalendar"                      =>  "3.10.0",         # Fullcalendar https://fullcalendar.io/
     "html5shiv"                         =>  "3.7.3",          # HTML5 Shiv http://github.com/aFarkas/html5shiv/
     "hideshowpassword"                  =>  "2.1.1",          # hideShowPassword https://github.com/cloudfour/hideShowPassword/
