@@ -7,7 +7,7 @@ return [
 # --------------------------------------------------------------------
     "flavour"   =>  "mini",  # http://mini.trece.io/
     "version"   =>  "0.14.50",  # http://mini.trece.io/changelog
-    "motto"     =>  "A humble start", # In other words: "Nailing perfection" ;-)
+    "motto"     =>  "A humbler start", # In other words: "Nailing perfection" ;-)
     "theme"     =>  $theme="minimal",
   ],
 
