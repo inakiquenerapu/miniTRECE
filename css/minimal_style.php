@@ -17,7 +17,7 @@ echo <<<CSS
 # Thank you Håkon Wium Lie (@wiumlie) for inventing CSS.
 # Thank you Eric Meyer (@meyerweb) for inventing Eric Meyer’s CSS Reset
 
-CSS file
+# CSS file
 
 */
 

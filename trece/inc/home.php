@@ -17,7 +17,7 @@
 <p>A very simple, lightweight, minimalist, free (<a href="https://choosealicense.com/licenses/mit/">MIT License</a>) CMS or Website builder tool based on documents on the server (no database) and, this is important, <strong>multilingual-ready and multilingual-friendly</strong> from the very first moment (no plugins needed). Contents can be written with markdown or hmtl syntax.</p>
 
 <div class="alert alert-success" role="alert">
-  <p>The best way to understand and customize <strong>miniTRECE</strong> is <i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">downloading the files from GitHub</a> and play with them.</p>
+  <p>The best way to understand and customize <strong>miniTRECE</strong> is <i class="far fa-file-archive"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">downloading the files from GitHub</a> and play with them.</p>
 </div>
 
 <h4><strong>Ok, some light:</strong></h4>
@@ -44,7 +44,7 @@
 <p>Una muy simple, ligera, minimalista, libre y gratuita (<a href="https://choosealicense.com/licenses/mit/">MIT License</a>) herramienta para construir sitios web o CMS basado en documentos en el servidor (no base de datos) y, esto es importante, <strong>preparado y amistoso para crear sitios web multilingües</strong> desde el primer momento (no hay que añadir plugins). Los contenidos pueden ser escritos usando sintaxis markdown o hmtl.</p>
 
 <div class="alert alert-success" role="alert">
-  <p>El mejor modo de comprender y personalizar <strong>miniTRECE</strong> es <i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">descargando los archivos de GitHub</a> y jugando con ellos.</p>
+  <p>El mejor modo de comprender y personalizar <strong>miniTRECE</strong> es <i class="far fa-file-archive"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">descargando los archivos de GitHub</a> y jugando con ellos.</p>
 </div>
 
 <h4><strong>Ok, un poco de luz:</strong></h4>
@@ -71,7 +71,7 @@
 <p>Unha moi simple, lixeira, minimalista, libre e gratuita (<a href="https://choosealicense.com/licenses/mit/">MIT License</a>) ferramenta para construir sitios web ou CMS baseado en documentos no servidor (non base de datos) e (isto é importante) <strong>listo e amistoso para crear sitios web multilingües</strong> desde o primeiro momento (non hai que engadir plugins). Os contidos poden ser escritos usando sintaxe markdown ou hmtl.</p>
 
 <div class="alert alert-success" role="alert">
-  <p>O millor modo de comprender e personalizar <strong>miniTRECE</strong> é <i class="fa fa-file-archive-o" aria-hidden="true"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">descargando os archivos de GitHub</a> e xogando con eles.</p>
+  <p>O millor modo de comprender e personalizar <strong>miniTRECE</strong> é <i class="far fa-file-archive"></i> <a href="https://github.com/quenerapu/miniTRECE/archive/master.zip" class="alert-link">descargando os archivos de GitHub</a> e xogando con eles.</p>
 </div>
 
 <h4><strong>Ok, un chisco de luz:</strong></h4>
