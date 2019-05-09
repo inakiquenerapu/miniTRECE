@@ -12,4 +12,11 @@ Files `trece/inc/html-sample.php`, `trece/inc/markdown-sample.php` and `trece/in
 
 Files `trece/inc/minimal_header.php`, `trece/inc/minimal_footer.php` and `css/minimal_style.php` show you the minimal theme, a starting point for developing your own miniTRECE theme.
 
+The condition equivalent to the `.htaccess` needed in nginx is:
+```
+location ~* /miniTRECE {
+            try_files $uri $uri/ /miniTRECE/index.php?$args;
+}
+```
+
 :) Quenerapú
