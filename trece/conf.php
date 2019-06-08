@@ -33,6 +33,7 @@ return [
     "header"            =>  ($theme==""?"":$theme."_")."header",
     "index"             =>  "index",
     "footer"            =>  ($theme==""?"":$theme."_")."footer",
+    "md-container"      =>  "md-container",
     "style"             =>  ($theme==""?"":$theme."_")."style",
     "script"            =>  ($theme==""?"":$theme."_")."functions",
     "the404"            =>  "404",
