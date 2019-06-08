@@ -155,6 +155,7 @@ return [
     "clipboard_js"                      =>  "2.0.4",          # Clipboard.js https://clipboardjs.com/
     "cookieconsent2"                    =>  "3.1.0",          # Cookie Consent by Silktide Insites https://cookieconsent.insites.com/
     "croppie"                           =>  "2.6.3",          # Croppie http://foliotek.github.io/Croppie/
+    "ekko_lightbox"                     =>  "5.3.0",          # Bootstrap Lightbox (Ekko Lightbox) http://ashleydw.github.io/lightbox/
     "exif_js"                           =>  "2.3.0",          # Exif.js https://github.com/exif-js/exif-js/
     "fontawesome"                       =>  "4.7.0",          # Font Awesome http://fontawesome.com/
 //  "fontawesome"                       =>  "5.8.1",          # Font Awesome http://fontawesome.com/
