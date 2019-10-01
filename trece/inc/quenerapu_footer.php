@@ -34,11 +34,11 @@
         <a href="https://trece.io">
         <img src="<?=
           file_exists($conf["dir"]["images"]."logo.svg") ?
-          $conf["dir"]["images"]."logo.svg" :
+          $conf["dir"]["images"]."logo.svg?".time() :
           (file_exists($conf["dir"]["images"]."logo.png") ?
-          $conf["dir"]["images"]."logo.png" :
-          "data:image/svg+xml;base64,".str_replace("[COLOR]",$conf["logo"]["white"],$conf["logo"]["img"]))
-          ;?>" alt="<?=$conf["site"]["title"][$conf["site"]["lang"]];?>" class="logo TRECE">
+          $conf["dir"]["images"]."logo.png?".time() :
+          "data:image/svg+xml;base64,".str_replace("[COLOR]",$conf["trece"]["logo"]["white"],$conf["trece"]["logo"]["img"]))
+          ;?>" alt="<?=$conf["meta"]["title"][LANG];?>" class="img-responsive">
         </a>
       ]</h4>
       <h4>[
